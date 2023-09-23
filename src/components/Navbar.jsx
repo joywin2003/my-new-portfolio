@@ -12,13 +12,13 @@ const Section = styled.div`
 
 const Container = styled.div`
   width: 1400px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 50px;
   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 30px;
+  padding: 15px 30px;
   border: 0px solid white;
   margin-top: 50px;
 
@@ -35,6 +35,7 @@ const Links = styled.div`
 `;
 
 const Logo = styled.img`
+  background: transparent;
   height: 50px;
 `;
 
@@ -53,7 +54,7 @@ const ListItem = styled.li`
   border-radius: 45px;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.7); 
+    color: rgba(255, 255, 255, 0.7);
   }
 `;
 
@@ -83,7 +84,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          {/* <Logo src="./img/newlogo1.png" /> */}
+          <Logo src="./img/mynewlogo.png" />
           <List>
             <ListItem>Home</ListItem>
             <ListItem>About</ListItem>
