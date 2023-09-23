@@ -126,16 +126,18 @@ const Hero = () => {
       <Navbar />
       <Container>
         <Left>
-          <Title>Think. Make. Solve.</Title>
+          <Title>Hey There,</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>What we Do</Subtitle>
+            <Subtitle>Who Am I?</Subtitle>
           </WhatWeDo>
           <Desc>
-            we enjoy creating delightful, human-centered digital experiences.
+            Well, I'm Joywin, an aspiring developer who enjoys watching anime and
+            diving into exciting projects.
           </Desc>
-          <Button>Learn More</Button>
+          <Button>My Resume</Button>
         </Left>
+
         <Right>
           <Canvas>
             <Suspense fallback={null}>
@@ -152,7 +154,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./img/moon.png" />
+          <Img src="./img/bg3.webp" />
         </Right>
       </Container>
     </Section>
