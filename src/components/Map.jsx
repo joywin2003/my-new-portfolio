@@ -4,7 +4,7 @@ import {
   Geographies,
   Geography,
   Annotation,
-  ZoomableGroup
+  ZoomableGroup,
 } from "react-simple-maps";
 
 const Map = () => {
@@ -12,11 +12,11 @@ const Map = () => {
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [-10.0, -52.0, 0],
+        rotate: [-90.0, -15.0, 0],
         center: [-5, -3],
-        scale: 1600
+        scale: 1000,
       }}
-      style={{width:"100%", height:"100%"}}
+      style={{ width: "100%", height: "100%" }}
     >
       <Geographies
         geography="/features.json"
@@ -31,31 +31,17 @@ const Map = () => {
         }
       </Geographies>
       <Annotation
-        subject={[2.3522, 48.8566]}
+        subject={[12, 75]}
         dx={-90}
         dy={-30}
         connectorProps={{
           stroke: "white",
           strokeWidth: 2,
-          strokeLinecap: "round"
+          strokeLinecap: "round",
         }}
       >
         <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-          {"Paris"}
-        </text>
-      </Annotation>
-      <Annotation
-        subject={[21.01178, 52.22977]}
-        dx={-90}
-        dy={-30}
-        connectorProps={{
-          stroke: "white",
-          strokeWidth: 2,
-          strokeLinecap: "round"
-        }}
-      >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-          {"Warsaw"}
+          {"Home"}
         </text>
       </Annotation>
     </ComposableMap>

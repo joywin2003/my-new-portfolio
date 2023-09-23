@@ -12,10 +12,15 @@ const Section = styled.div`
 
 const Container = styled.div`
   width: 1400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 30px 30px;
+  border: 0px solid white;
+  margin-top: 50px;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -35,16 +40,21 @@ const Logo = styled.img`
 
 const List = styled.ul`
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
 
   @media only screen and (max-width: 768px) {
     display: none;
   }
 `;
-
 const ListItem = styled.li`
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 45px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.7); 
+  }
 `;
 
 const Icons = styled.div`
@@ -73,18 +83,17 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/logo.png" />
+          {/* <Logo src="./img/newlogo1.png" /> */}
           <List>
             <ListItem>Home</ListItem>
-            <ListItem>Studio</ListItem>
-            <ListItem>Works</ListItem>
+            <ListItem>About</ListItem>
+            <ListItem>Projects</ListItem>
             <ListItem>Contact</ListItem>
           </List>
         </Links>
         <Icons>
-          {/* Changed the image due to copyright problems */}
           <Icon src="./img/search.png" />
-          <Button>Hire Now</Button>
+          {/* <Button>Hire Now</Button> */}
         </Icons>
       </Container>
     </Section>

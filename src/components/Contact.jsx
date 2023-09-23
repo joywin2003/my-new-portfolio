@@ -101,7 +101,7 @@ const Contact = () => {
   return (
     <Section>
       <Container>
-        <Left>
+        {/* <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>
             <Input placeholder="Name" name="name" />
@@ -115,7 +115,7 @@ const Contact = () => {
             {success &&
               "Your message has been sent. We'll get back to you soon :)"}
           </Form>
-        </Left>
+        </Left> */}
         <Right>
           <Map />
         </Right>
