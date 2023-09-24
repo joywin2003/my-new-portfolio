@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { PerspectiveCamera, RenderTexture, Text } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
-
 const Cube = () => {
   const textRef = useRef();
   useFrame(
