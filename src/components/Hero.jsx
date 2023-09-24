@@ -3,6 +3,10 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub,faLinkedin, faTwitter,faInstagram,faTelegram, } from "@fortawesome/free-brands-svg-icons";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
+
 
 const Section = styled.div`
   height: 100vh;
@@ -46,29 +50,19 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  font-size: 68px;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
   }
 `;
-
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-const Line = styled.img`
-  height: 5px;
-`;
-
 const Subtitle = styled.h2`
   color: #da4ea2;
+  font-size: 25px;
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
+  font-size: 14px;
   color: lightgray;
   @media only screen and (max-width: 768px) {
     padding: 20px;
@@ -78,13 +72,16 @@ const Desc = styled.p`
 
 const Button = styled.button`
   background-color: #da4ea2;
+  min-width: 110px;
+  display: flex;
   color: white;
   font-weight: 500;
   width: 100px;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
+  justify-content: space-between;
 `;
 
 const Right = styled.div`
@@ -120,22 +117,37 @@ const Img = styled.img`
   }
 `;
 
+const Social = styled.div` 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  padding: 5px 0px ;
+`
+
 const Hero = () => {
   return (
     <Section>
       <Navbar />
       <Container>
         <Left>
-          <Title>Hey There,</Title>
-          <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>Who Am I?</Subtitle>
-          </WhatWeDo>
+          <Title>Hey, I'm Joywin</Title>
+          <Subtitle>An aspiring developer</Subtitle>
           <Desc>
-            Well, I'm Joywin, an aspiring developer who enjoys watching anime and
-            diving into exciting projects.
+            I'm an enthusiast with a knack for coding and a deep love for anime.
+            I find joy in exploring new and exciting projects, always eager to
+            dive into the world of coding and try out new things just for the
+            fun of it.
           </Desc>
-          <Button>My Resume</Button>
+
+          <Button>My Resume <FontAwesomeIcon icon={faFileDownload} style={{ marginLeft: '5px' }} /></Button>
+          <Social>
+            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faTelegram} />
+          </Social>
         </Left>
 
         <Right>

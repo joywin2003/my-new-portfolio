@@ -12,13 +12,13 @@ const Section = styled.div`
 
 const Container = styled.div`
   width: 1400px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 15px 40px;
   border: 0px solid white;
   margin-top: 50px;
 
@@ -84,7 +84,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/mynewlogo.png" />
+          <Logo src="./img/newlogo3.png" />
           <List>
             <ListItem>Home</ListItem>
             <ListItem>About</ListItem>
