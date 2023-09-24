@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
+import ComputersCanvas from "./canvas/computer";
 
 
 const Section = styled.div`
@@ -21,8 +22,8 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-  flex: 1;
-
+  flex: 2;
+  width: 800px;
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -79,42 +80,20 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Img = styled.img`
-  width: 800px;
-  height: 600px;
-  object-fit: contain;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  animation: animate 2s infinite ease alternate;
-
-  @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
-  }
-
-  @keyframes animate {
-    to {
-      transform: translateY(20px);
-    }
-  }
-`;
-
 const Who = () => {
   return (
     <Section>
       <Container>
         <Left>
-          <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
+          {/* <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
             <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
               <directionalLight position={[3, 2, 1]} />
               <Cube />
               <OrbitControls enableZoom={false} autoRotate />
             </Suspense>
-          </Canvas>
+          </Canvas> */}
+          <ComputersCanvas />
           {/* <Img src="./img/desktop.jpeg" /> */}
         </Left>
         <Right>
