@@ -79,7 +79,7 @@ const Button = styled.button`
   width: 100px;
   padding: 12px;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   justify-content: space-between;
 `;
@@ -156,7 +156,7 @@ const Hero = () => {
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
+              <Sphere args={[1, 100, 200]} scale={2.6}>
                 <MeshDistortMaterial
                   color="#3d1c56"
                   attach="material"
