@@ -5,9 +5,9 @@ import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
 import ComputersCanvas from "./canvas/computer";
 
-
 const Section = styled.div`
   height: 100vh;
+  width: 100vw;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -16,13 +16,14 @@ const Section = styled.div`
 const Container = styled.div`
   height: 100vh;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 1600px;
   display: flex;
-  justify-content: space-between;
 `;
 
 const Left = styled.div`
-  flex: 2;
+  flex: 5;
+  padding: 40px 0px;
+  padding-right: 100px;
   width: 800px;
   @media only screen and (max-width: 768px) {
     display: none;
@@ -38,8 +39,9 @@ const Title = styled.h1`
 `;
 
 const Right = styled.div`
-  flex: 1;
+  flex: 3;
   display: flex;
+  padding-right: 50px;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -73,7 +75,7 @@ const Button = styled.button`
   background-color: #da4ea2;
   color: white;
   font-weight: 500;
-  width: 120px;
+  width: 140px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -97,16 +99,16 @@ const Who = () => {
           {/* <Img src="./img/desktop.jpeg" /> */}
         </Left>
         <Right>
-          <Title>Think outside the square space</Title>
+          <Title>Explore My Projects</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>What I've Been Working On</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative group of designers and developers with a passion for the
-            arts.
+            Discover a collection of my creative projects and developments,
+            showcasing my passion and skills.
           </Desc>
-          <Button>See our works</Button>
+          <Button>View My Projects</Button>
         </Right>
       </Container>
     </Section>

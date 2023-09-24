@@ -24,7 +24,7 @@ const Section = styled.div`
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 1600px;
   display: flex;
   justify-content: space-between;
 
@@ -37,6 +37,7 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+  padding-left: 100px;
   flex: 2;
   display: flex;
   flex-direction: column;
