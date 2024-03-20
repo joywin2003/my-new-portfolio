@@ -9,6 +9,7 @@ function Footer() {
 }
 
 const footerStyle = {
+  backgroundColor: "#dc9dcd",
   color: '#fff',
   textAlign: 'center',
   padding: '1rem',
@@ -22,7 +23,7 @@ const footerStyle = {
 export default Footer;
 
 
-export function Announcement() {
+export function Announcement({ text }) {
   const announcementStyle = {
     backgroundColor: '#451e6d',
     color: '#fff',
@@ -46,7 +47,7 @@ export function Announcement() {
     <div style={announcementStyle}>
       <span role="img" aria-label="Megaphone" style={emojiStyle}>📢</span>
       <p style={{ margin: 0 }}>
-        A new portfolio website is in development. Stay tuned!
+        {text}
       </p>
     </div>
   );
