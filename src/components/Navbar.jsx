@@ -11,7 +11,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 1200px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
@@ -20,7 +20,7 @@ const Container = styled.div`
   align-items: center;
   padding: 15px 40px;
   border: 0px solid white;
-  margin-top: 50px;
+  margin-top: 80px;
 
   @media only screen and (max-width: 768px) {
     width: 100%;

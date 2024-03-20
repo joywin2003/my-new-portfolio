@@ -4,9 +4,14 @@ import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub,faLinkedin, faTwitter,faInstagram,faTelegram, } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faInstagram,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
-
 
 const Section = styled.div`
   height: 100vh;
@@ -37,7 +42,7 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-  padding-left: 100px;
+  padding-left: 120px;
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -118,15 +123,18 @@ const Img = styled.img`
   }
 `;
 
-const Social = styled.div` 
+const Social = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 20px;
-  padding: 5px 0px ;
-`
+  padding: 5px 0px;
+`;
 
 const Hero = () => {
+  function handleButtonClick() {
+    window.open("https://file.io/r3rhOIseWixf", "_blank"); // Open the link in a new tab
+  }
   return (
     <Section>
       <Navbar />
@@ -140,8 +148,13 @@ const Hero = () => {
             dive into the world of coding and try out new things just for the
             fun of it.
           </Desc>
-
-          <Button>My Resume <FontAwesomeIcon icon={faFileDownload} style={{ marginLeft: '5px' }} /></Button>
+          <Button onClick={handleButtonClick} variant="primary">
+            My Resume{" "}
+            <FontAwesomeIcon
+              icon={faFileDownload}
+              style={{ marginLeft: "5px" }}
+            />
+          </Button>{" "}
           <Social>
             <FontAwesomeIcon icon={faGithub} />
             <FontAwesomeIcon icon={faLinkedin} />

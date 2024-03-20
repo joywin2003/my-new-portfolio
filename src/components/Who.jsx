@@ -108,7 +108,7 @@ const Who = () => {
             Discover a collection of my creative projects and developments,
             showcasing my passion and skills.
           </Desc>
-          <Button>View My Projects</Button>
+          <Button onClick={()=>{window.open("https://github.com/joywin2003?tab=repositories")}}>View My Projects</Button>
         </Right>
       </Container>
     </Section>

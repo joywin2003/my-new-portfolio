@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Map from "./Map";
+import Footer from "./footer";
 
 const Section = styled.div`
   height: 100vh;
